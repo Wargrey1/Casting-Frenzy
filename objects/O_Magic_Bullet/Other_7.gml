@@ -1,0 +1,1 @@
+sprite_index = S_Magic_Bullet_Shooting;

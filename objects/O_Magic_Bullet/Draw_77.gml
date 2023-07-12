@@ -1,0 +1,1 @@
+if (place_meeting(x,y,O_Barrier)) instance_destroy();

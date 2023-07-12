@@ -1,0 +1,25 @@
+GUI:
+	Status Bar         | -
+	Menu               | -
+	Graphic            | --
+	Upgrade System     | =
+	Trans Room         | -
+	Rooms              | --
+
+Movement:
+	Walking            |  +
+	Jumping            |  ++
+	Slow Motion        |  -
+	
+Spell:
+	Aura               |  -
+	Casting Display    |  ++
+	Naming Spell       |  -
+	Spells             |  ---
+	Casting Spell      |  -       (to do)
+	
+Monster:
+	Minion             |  -
+	Boss               |  --
+	AI Chase           |  -
+	
