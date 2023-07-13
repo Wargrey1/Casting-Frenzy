@@ -1,0 +1,1 @@
+image_speed = O_Player.global_time;

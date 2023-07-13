@@ -8,3 +8,5 @@ if O_Player.spell_count > stage
 	image_yscale += 0.15 * stage;
 	stage++;
 }
+
+if stage == 5 image_speed = 1;

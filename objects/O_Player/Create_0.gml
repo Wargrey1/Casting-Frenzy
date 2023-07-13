@@ -1,7 +1,14 @@
 //Stat
-max_hp = 1000
+mp = 500;
 max_mp = 1000;
+regen = 0;
 atk = 100;
+manabar_width = 400;
+manabar_heigh = 8;
+manabar_x = 1280/2 - manabar_width/2;
+manabar_y = ystart+110;
+flash = 0;
+
 
 //Physic
 x_speed = 0;
@@ -9,6 +16,7 @@ y_speed = 0;
 grv = 0.4;
 move_speed = 6;
 firing_delay = 0;
+global_time = 1;
 
 //jumping
 jump_speed = -5;

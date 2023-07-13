@@ -7,7 +7,7 @@ var _move = _key_right - _key_left;
 
 //adjust speed
 x_speed = _move * move_speed;
-y_speed += grv;
+y_speed += grv*global_time;
 	
 //reset jump count
 if place_meeting(x,y+1,O_Barrier)
@@ -32,7 +32,7 @@ if !_key_jump_hold {jump_timer = 0;}
 if jump_timer > 0
 {
 	y_speed = jump_speed;
-	jump_timer--;
+	jump_timer-= global_time;
 }
 
 //colli ground
@@ -44,8 +44,8 @@ if (place_meeting(x+x_speed,y,O_Barrier))
 }
 
 //adjust cord
-x += x_speed;
-y += y_speed;
+x += x_speed * global_time;
+y += y_speed * global_time;
 
 
 //check facing
@@ -55,6 +55,7 @@ if _key_jump || _key_left || _key_right
 	sprite_index = S_Player_Walk_Right;
 	else
 	sprite_index = S_Player_Walk_Left;
+	image_speed = global_time;
 }
 else
 {
@@ -62,17 +63,21 @@ else
 	sprite_index = S_Player_Idle_Right;
 	else 
 	sprite_index = S_Player_Idle_Left;
+	image_speed = global_time;
 }
 
 //shooting
-firing_delay = firing_delay - 1;
+firing_delay = firing_delay - global_time;
 if (mouse_check_button(mb_left)) && (firing_delay < 0)
 {	
-	firing_delay = 90;
+	firing_delay = 70;
 	with(instance_create_layer(x,y,"Bullets",O_Magic_Bullet))
 	{
-		speed = 4;
 		direction = point_direction(x,y,mouse_x,mouse_y);
 		image_angle = direction; 
 	}
 }
+
+//regen
+if mp <= 990 && regen >= 30 {mp+=10; regen=0;}
+else regen+= global_time;

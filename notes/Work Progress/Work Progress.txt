@@ -13,10 +13,10 @@ Movement:
 	
 Spell:
 	Aura               |  -
-	Casting Display    |  ++
+	Casting Display    |  +
 	Naming Spell       |  -
-	Spells             |  ---
-	Casting Spell      |  -       (to do)
+	Spells             |  --
+	Casting Spell      |  +
 	
 Monster:
 	Minion             |  -
