@@ -1,0 +1,41 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "O_Button_Quit",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"O_Button_Parent","path":"objects/O_Button_Parent/O_Button_Parent.yy",},"propertyId":{"name":"button_text","path":"objects/O_Button_Parent/O_Button_Parent.yy",},"value":"Quit",},
+  ],
+  "parent": {
+    "name": "Button",
+    "path": "folders/Objects/Button.yy",
+  },
+  "parentObjectId": {
+    "name": "O_Button_Parent",
+    "path": "objects/O_Button_Parent/O_Button_Parent.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [],
+  "solid": false,
+  "spriteId": {
+    "name": "S_Button_Text",
+    "path": "sprites/S_Button_Text/S_Button_Text.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

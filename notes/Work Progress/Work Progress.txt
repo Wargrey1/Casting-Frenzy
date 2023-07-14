@@ -1,5 +1,5 @@
 GUI:
-	Status Bar         | -
+	Mana Bar           | +
 	Menu               | -
 	Graphic            | --
 	Upgrade System     | =
@@ -9,7 +9,7 @@ GUI:
 Movement:
 	Walking            |  +
 	Jumping            |  ++
-	Slow Motion        |  -
+	Slow Motion        |  +
 	
 Spell:
 	Aura               |  -

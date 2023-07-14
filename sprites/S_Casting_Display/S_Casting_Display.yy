@@ -50,8 +50,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Aura",
-    "path": "folders/Sprites/Aura.yy",
+    "name": "Other",
+    "path": "folders/Sprites/Other.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

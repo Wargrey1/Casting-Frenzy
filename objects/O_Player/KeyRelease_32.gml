@@ -11,6 +11,7 @@ switch (spell_queue[0] + spell_queue[1] + spell_queue[2])
 		speed = 5;
 		direction = point_direction(x,y,mouse_x,mouse_y);
 		image_angle = direction;
+		show_message("yes");
 		}
 		else
 		{
@@ -230,3 +231,4 @@ switch (spell_queue[0] + spell_queue[1] + spell_queue[2])
 global_time= 1;
 state = "finish";
 spell_count = 0;
+spell_queue = ["","","","",""];
